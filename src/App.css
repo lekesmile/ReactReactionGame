@@ -1,33 +1,77 @@
-.App {
+/* body{
+   background-image: linear-gradient(-180deg, white, yellow);
+} */
+
+.Jumbotron {
   text-align: center;
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.h1{
+  font-size: 120px;
+  color: rgb(14, 14, 15);
+  text-shadow: -1px 0 rgb(206, 80, 80), 0 1px rgb(185, 14, 14), 1px 0 rgb(190, 33, 33), 0 -1px rgb(184, 58, 58);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contflex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.circle {
+  position: relative;
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+   background-color: #000000;
+}
+
+.circle.active{
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 1);
+  background: pink;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.center {
+  text-align: center !important;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+
+/* //Game over */
+
+#result{
+
+}
+#gameover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    
+    background-color: rgba(35, 129, 160, 0.452);
+}
+@media screen and (max-width: 900px) {
+.h1{
+  font-size: 80px;
+  color: rgb(14, 14, 15);
+  text-shadow: -1px 0 rgb(206, 80, 80), 0 1px rgb(185, 14, 14), 1px 0 rgb(190, 33, 33), 0 -1px rgb(184, 58, 58);
+}
+  .circle {
+    width: 100px;
+    height: 100px;
   }
 }
